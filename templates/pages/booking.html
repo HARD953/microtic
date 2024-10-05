@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block contenu %}
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            {% include 'includes/navbar.html' %}
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Votre devis</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'website:home' %}">Accueil</a></li>
+                    <li class="breadcrumb-item active text-white">Votre devis</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Tour Booking Start -->
+        <div class="container-fluid booking py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h5 class="section-booking-title pe-3">Devis</h5>
+                        <h1 class="text-white mb-4">Faites une demande de devis ici</h1>
+                        <p class="text-white mb-4">Vous desirez un de nos services, entrez vos contacts et les informations nécessaires pour votre dévis et nous vous contacterons.
+                        </p>
+                        <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Nos contacts</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-white mb-3">Renseignez le formulaire ci-dessous</h2>
+                        <form method="post" action="{% url 'website:devis' %}">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" required class="form-control bg-white border-0" name="telephone" placeholder="Numéro de téléphone">
+                                        <label for="telephone">Numéro de téléphone *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" required class="form-control bg-white border-0" name="email" placeholder="Email">
+                                        <label for="email">Email *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" required class="form-control bg-white border-0" name="nom_complet" placeholder="Nom complet">
+                                        <label for="noms_prenoms">Nom complet *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" required class="form-control bg-white border-0" name="article" placeholder="Article">
+                                        <label for="article">Article *</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control bg-white border-0" name="quantite" placeholder="Quantité">
+                                        <label for="quantite">Quantité</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-white border-0" name="dimensions" placeholder="Dimensions">
+                                        <label for="dimensions">Dimensions</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-white border-0" placeholder="Description" name="designation" style="height: 100px"></textarea>
+                                        <label for="message">Description</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input class="btn btn-primary text-white w-100 py-3" value="Envoyer" type="submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tour Booking End -->
+{% endblock %}

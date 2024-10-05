@@ -1,0 +1,121 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block contenu %}
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            {% include 'includes/navbar.html' %}
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Nos Services</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'website:home' %}">Accueil</a></li>
+                    <li class="breadcrumb-item active text-white">Services</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Services Start -->
+        <div class="container-fluid bg-light service py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Services</h5>
+                    <h1 class="mb-0">Nos Services</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                                    <div class="service-content text-end">
+                                        <h5 class="mb-6">IMPRIMERIE</h5>
+                                        <p class="mb-0">
+                                            L'imprimerie est un service essentiel pour toute entreprise souhaitant diffuser des informations de manière professionnelle et efficace. Nous offrons une gamme complète de services d'impression, allant des cartes de visite et brochures aux affiches grand format et bannières. Nos équipements modernes garantissent une qualité d'impression exceptionnelle, avec des couleurs vives et des détails précis. Que vous ayez besoin d'un tirage en petite ou grande quantité, nous assurons des délais de livraison rapides et des tarifs compétitifs. Notre équipe de graphistes est également à votre disposition pour vous aider à concevoir des documents qui attirent l'attention et transmettent efficacement votre message.
+                                        </p>
+                                    </div>
+                                    <div class="service-icon p-4">
+                                        <!-- <i class="fa fa-print fa-4x text-primary"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
+                                    <div class="service-content text-end">
+                                        <h5 class="mb-4">ENSEIGNE LUMINEUSE</h5>
+                                        <p class="mb-0">
+                                            Les enseignes lumineuses sont un excellent moyen de faire ressortir votre entreprise, surtout la nuit. Nous concevons et fabriquons des enseignes lumineuses personnalisées qui attirent l'attention et augmentent la visibilité de votre marque. Utilisant les dernières technologies LED, nos enseignes offrent une luminosité éclatante, une longue durée de vie et une consommation énergétique réduite. Que vous souhaitiez une enseigne en néon rétro, des lettres lumineuses modernes ou un panneau rétroéclairé, nous travaillons avec vous pour créer une solution qui reflète parfaitement l'identité de votre entreprise. Nos équipes s'occupent de tout, de la conception à l'installation, en passant par la maintenance, pour garantir un résultat impeccable.
+                                        </p>
+                                    </div>
+                                    <div class="service-icon p-4">
+                                        <!-- <i class="fa fa-sun fa-4x text-primary"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
+                                    <div class="service-content text-end">
+                                        <h5 class="mb-4">SIGNALETIQUE</h5>
+                                        <p class="mb-0">
+                                            La signalétique joue un rôle crucial dans l'orientation et l'information des visiteurs dans n'importe quel espace, qu'il soit commercial, institutionnel ou public. Nous proposons des solutions de signalétique personnalisées, incluant des panneaux directionnels, des plaques de porte, des affichages numériques et des totems. Chaque projet est réalisé avec une attention particulière aux détails pour garantir une lisibilité optimale et une intégration harmonieuse avec l'environnement. Nos experts en signalétique travaillent en étroite collaboration avec vous pour comprendre vos besoins spécifiques et concevoir des solutions qui améliorent l'expérience utilisateur tout en renforçant l'image de votre marque.
+                                        </p>
+                                    </div>
+                                    <div class="service-icon p-4">
+                                        <!-- <i class="fa fa-user fa-4x text-primary"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                    <div class="service-icon p-4">
+                                        <!-- <i class="fa fa-globe fa-4x text-primary"></i> -->
+                                    </div>
+                                    <div class="service-content">
+                                        <h5 class="mb-4">CONSTRUCTION METALLIQUE</h5>
+                                        <p class="mb-0">
+                                            La construction métallique est au cœur de nombreux projets architecturaux modernes. Nous proposons des services complets de conception, fabrication et installation de structures métalliques pour divers types de bâtiments. Que ce soit pour des hangars, des usines, des entrepôts ou des structures résidentielles, nous utilisons des matériaux de haute qualité pour assurer la solidité et la longévité de chaque construction. Nos ingénieurs et techniciens sont formés pour respecter les normes de sécurité et de construction les plus rigoureuses, tout en offrant des solutions sur mesure adaptées à vos besoins spécifiques. Nous nous engageons à fournir des structures robustes et esthétiques, conçues pour durer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                    <div class="service-icon p-4">
+                                        <!-- <i class="fa fa-television fa-4x text-primary"></i> -->
+                                    </div>
+                                    <div class="service-content">
+                                        <h5 class="mb-4">PANNEAU PUBLICITAIRES</h5>
+                                        <p class="mb-0">
+                                            Les panneaux publicitaires sont un moyen puissant de promouvoir votre marque et de captiver l'attention de votre public cible. Nous offrons une gamme complète de services de conception, fabrication et installation de panneaux publicitaires de toutes tailles. Que vous ayez besoin de panneaux pour des événements, des enseignes de magasin ou des publicités extérieures, nous utilisons des matériaux durables et des techniques d'impression de haute qualité pour garantir un impact visuel maximal. Nos designers travaillent avec vous pour créer des visuels accrocheurs et percutants, tandis que notre équipe de montage s'assure que vos panneaux sont installés en toute sécurité et à des emplacements stratégiques.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
+                                    <div class="service-icon p-4">
+                                        <!-- <i class="fa fa-user fa-4x text-primary"></i> -->
+                                    </div>
+                                    <div class="service-content">
+                                        <h5 class="mb-4">ALUCOBOND ET VITRE</h5>
+                                        <p class="mb-0">
+                                            Notre service d'installation d'Alucobond et de vitres est idéal pour donner à vos bâtiments un aspect moderne et élégant. L'Alucobond, un matériau composite en aluminium, est réputé pour sa durabilité, sa légèreté et sa résistance aux intempéries, ce qui en fait un choix populaire pour les façades extérieures et les revêtements muraux. Nous proposons également des solutions de vitrage innovantes, allant des vitrines de magasin aux grandes fenêtres panoramiques. Notre équipe d'experts travaille avec précision et soin pour s'assurer que chaque installation est réalisée selon les normes les plus strictes, garantissant à la fois esthétique et fonctionnalité.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+{% endblock %}
